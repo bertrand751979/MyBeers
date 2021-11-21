@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp">
+
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:id="@+id/desc_picture"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/desc_name"
+                android:layout_width="300dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="105dp"
+                android:text=" Nom" />
+
+            <TextView
+                android:id="@+id/desc_tagline"
+                android:layout_width="300dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:textColor="#7C0909"
+                android:textStyle="normal"
+                android:layout_marginTop="130dp"
+                android:text=" Tagline"/>
+
+            <TextView
+                android:id="@+id/desc_description"
+                android:layout_width="300dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/purple_500"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text=" Description..."/>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
